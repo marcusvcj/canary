@@ -40,7 +40,7 @@ local function revertTeleport(position, itemId, transformId, destination)
 	end
 end
 
-local ascendantBossesKill = CreatureEvent("AscendantBossesDeath")
+local ascendantBossesKill = CreatureEvent("AscendantBossesKill")
 function ascendantBossesKill.onDeath(creature)
 	local bossConfig = bosses[creature:getName():lower()]
 	if not bossConfig then
